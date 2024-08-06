@@ -1,8 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { Authentication } from '@nestjs-cognito/auth';
-import { ApiBearerAuth } from '@nestjs/swagger';
+// import { ApiBearerAuth } from '@nestjs/swagger';
 
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('v1/policies')
 @Authentication()
 export class PoliciesController {

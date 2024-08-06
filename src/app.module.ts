@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CognitoAuthModule } from '@nestjs-cognito/auth';
 
 import { PoliciesModule } from './policies/policies.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { PoliciesModule } from './policies/policies.module';
       inject: [ConfigService],
     }),
     PoliciesModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
